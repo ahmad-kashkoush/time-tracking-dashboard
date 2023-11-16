@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(226, 43%, 10%);
+}
+
+main {
+  background-color: inherit;
+}
+
+.profile-info {
+  color: blue;
+}
+.category-work {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./reset";
+
+// @mixin screen1($smallest) {
+//   @content;
+// }
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $bg-color;
+}
+main {
+  background-color: inherit;
+}
+.profile-info {
+  color: blue;
+  & .card-info {
+  }
+  & .state {
+    & button {
+      &:hover {
+      }
+    }
+  }
+  //   @include screen1 {
+  //   }
+}
+
+.category {
+  .spent {
+  }
+  h2 {
+  }
+  .cur {
+  }
+  .prev {
+  }
+  &-work {
+    color: blue;
+  }
+}
