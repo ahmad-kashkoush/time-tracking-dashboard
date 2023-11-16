@@ -15,15 +15,51 @@ body {
   background-color: $bg-color;
 }
 main {
-  background-color: inherit;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.3rem;
 }
 .profile-info {
-  color: blue;
+  background-color: $card-color;
+  border-radius: $border-radius;
+
   & .card-info {
+    background-color: $profile-color;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2rem;
+    border-radius: inherit;
+
+    .sub {
+      color: $Pale-Blue;
+      display: block;
+    }
+    h2 {
+      color: $text-color;
+    }
+    img {
+      width: $avatar-width;
+      border: 3px solid #fff;
+      border-radius: 50%;
+    }
   }
+
   & .state {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
     & button {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: $Pale-Blue;
+      transition: color $main-transition;
+      cursor: pointer;
+      font-size: 16px;
       &:hover {
+        color: $text-color;
       }
     }
   }
@@ -32,7 +68,12 @@ main {
 }
 
 .category {
+  border-radius: $border-radius;
+
   .spent {
+    background-color: $card-color;
+    border-radius: inherit;
+    padding: 2rem;
   }
   h2 {
   }
@@ -41,6 +82,6 @@ main {
   .prev {
   }
   &-work {
-    color: blue;
+    background-image: url("../images/icon-work.svg");
   }
 }

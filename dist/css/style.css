@@ -14,12 +14,62 @@ body {
 }
 
 main {
-  background-color: inherit;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.3rem;
 }
 
 .profile-info {
-  color: blue;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+.profile-info .card-info {
+  background-color: hsl(235, 45%, 61%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem;
+  border-radius: inherit;
+}
+.profile-info .card-info .sub {
+  color: hsl(236, 100%, 87%);
+  display: block;
+}
+.profile-info .card-info h2 {
+  color: white;
+}
+.profile-info .card-info img {
+  width: 70px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.profile-info .state {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.profile-info .state button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: hsl(236, 100%, 87%);
+  transition: color 300ms ease-in-out;
+  cursor: pointer;
+  font-size: 16px;
+}
+.profile-info .state button:hover {
+  color: white;
+}
+
+.category {
+  border-radius: 15px;
+}
+.category .spent {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: inherit;
+  padding: 2rem;
 }
 .category-work {
-  color: blue;
+  background-image: url("../images/icon-work.svg");
 }/*# sourceMappingURL=style.css.map */
