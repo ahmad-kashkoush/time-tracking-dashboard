@@ -13,10 +13,14 @@ $primary-color: (
 $bg-color: hsl(226, 43%, 10%);
 $card-color: hsl(235, 46%, 20%);
 $text-color: white;
-$profile-color: hsl(235, 45%, 61%);
+$profile-color: #5746ea;
 // $profile-color: hsl(264, 64%, 52%);
 $Pale-Blue: hsl(236, 100%, 87%);
-
+$hover-color: $Pale-Blue;
 $avatar-width: 70px;
 $main-transition: 300ms ease-in-out;
 $border-radius: 15px;
+
+$font-family: "Rubik", sans-serif;
+
+$screen1: 1172px;

@@ -1,0 +1,21 @@
+// classifing each category Variables
+.category {
+  &-work {
+    @include categoryStyle("work");
+  }
+  &-play {
+    @include categoryStyle("play");
+  }
+  &-study {
+    @include categoryStyle("study");
+  }
+  &-exercise {
+    @include categoryStyle("exercise");
+  }
+  &-social {
+    @include categoryStyle("social");
+  }
+  &-self-care {
+    @include categoryStyle("self-care");
+  }
+}
